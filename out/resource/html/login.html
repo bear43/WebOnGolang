@@ -1,6 +1,6 @@
 <html lang="ru">
 <head>
-    <title>Main page</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -26,5 +26,18 @@
         </div>
     </div>
 </nav>
+<div class="container">
+    <form action="/login" method="post">
+        <div class="form-group">
+            <input class="form-control" type="text" name="username" required placeholder="Username"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" required placeholder="Password"/>
+        </div>
+        <div class="form-group text-center">
+            <input class="btn btn-primary" type="submit" value="Sign in"/>
+        </div>
+    </form>
+</div>
 </body>
 </html>

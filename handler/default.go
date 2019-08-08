@@ -13,7 +13,7 @@ func DefaultHandler(rw http.ResponseWriter, r *http.Request) {
 		r.URL.Path = "/index"
 	}
 	if DebugMode {
-		fmt.Println("Request ", r.URL.Path)
+		fmt.Println("Request", r.URL.Path, "Method:", r.Method)
 	}
 	htmlContent, err := util.LoadHtmlFromResourceFolder(r.URL.Path[1:] + ".html")
 	if err != nil {
